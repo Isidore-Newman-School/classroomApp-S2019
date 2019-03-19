@@ -1,0 +1,19 @@
+//- https://medium.com/@bhanushali.mahesh3/creating-a-simple-website-with-node-js-express-and-ejs-view-engine-856382a4578f
+//- https://stackoverflow.com/questions/10713923/node-js-jade-express-how-can-i-create-a-navigation-that-will-set-class-acti
+
+nav(class="navbar navbar-default")
+  div(class="container")
+    div(class="navbar-header")
+      button(type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar")
+        span(class="icon-bar")
+        span(class="icon-bar")
+        span(class="icon-bar")
+      a(class="navbar-brand" href="#") LOGO
+    div( class="collapse navbar-collapse" id="myNavbar")
+      ul(class="nav navbar-nav navbar-right")
+        li(class=(title === 'Home' ? 'active' : ''))
+          a(href='/') Home
+        li(class=(title === 'Login' ? 'active' : ''))
+          a(href='/auth/google') Login
+        li(class=(title === 'Logout' ? 'active' : ''))
+          a(href='/auth/logout') Logout
